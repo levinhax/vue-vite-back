@@ -6,13 +6,17 @@
     "build": "vite build",
     "lint:eslint": "eslint --fix --ext \"src/**/*.{vue,less,css,scss}\"",
     "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-    "lint:stylelint": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint:stylelint": "stylelint --fix \"src/**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "lint-staged": {
-    "src/**/*.{vue,ts,tsx}": [
-      "npm run lint:eslint",
-      "npm run lint:prettier",
+    "src/**/*.{vue,less,css,scss}": [
+      "npm run lint:eslint"
+    ],
+    "src/**/*.{js,json,tsx,css,less,scss,vue,html,md}": [
+      "npm run lint:prettier"
+    ],
+    "src/**/*.{vue,less,postcss,css,scss}": [
       "npm run lint:stylelint"
     ]
   },

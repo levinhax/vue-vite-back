@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['stylelint-order'],
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   rules: {
+    'unicode-bom': 'never',
     // 指定声明块内属性的字母顺序
     'order/properties-order': [
       'position',

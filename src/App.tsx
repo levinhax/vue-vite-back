@@ -1,11 +1,18 @@
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted } from 'vue'
 import Logo from './assets/logo.png'
 import { Button } from 'ant-design-vue'
+import { getGlobEnvConfig } from './utils/env'
 
 export default defineComponent({
   name: 'App',
   components: {},
   setup() {
+    onMounted(() => {
+      console.log('getGlobEnvConfig: ')
+      const globalEnvConfig = getGlobEnvConfig()
+      console.log(globalEnvConfig)
+    })
+
     return () => (
       <>
         <img alt="Vue logo" src={Logo} />

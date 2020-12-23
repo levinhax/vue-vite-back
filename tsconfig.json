@@ -69,6 +69,6 @@
       ],
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/setup/ant-design-vue/index.ts"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }

@@ -4,6 +4,7 @@ import HelloWord from '../../components/HelloWord'
 import Logo from '../../assets/logo.png'
 import { Button } from 'ant-design-vue'
 import { getGlobEnvConfig } from '/@/utils/env'
+import './index.module.scss'
 
 export default defineComponent({
   name: 'About',
@@ -38,7 +39,7 @@ export default defineComponent({
     })
 
     return () => (
-      <>
+      <div class="about">
         <h1>About</h1>
         <img src={Logo} />
         <p>用户名: {userName.value}</p>
@@ -49,7 +50,7 @@ export default defineComponent({
           {() => '更新用户信息'}
         </Button>
         <HelloWord />
-      </>
+      </div>
     )
   },
 })

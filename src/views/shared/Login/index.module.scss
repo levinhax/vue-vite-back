@@ -1,0 +1,34 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #384b6a;
+  background-size: cover;
+
+  .login-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .svg-icon {
+      font-size: 48px;
+    }
+
+    img {
+      height: 48px;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      margin-left: 10px;
+      color: #fff;
+    }
+  }
+
+  .login-content {
+    width: 400px;
+  }
+}

@@ -1,5 +1,6 @@
 import { defineComponent } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 
 export default defineComponent({
   name: 'App',
@@ -7,10 +8,10 @@ export default defineComponent({
   setup() {
     return () => (
       <>
-        <div id="nav">
+        {/* <div id="nav">
           <RouterLink to="/">{() => 'Home'}</RouterLink> |{' '}
           <RouterLink to="/about">{() => 'About'}</RouterLink>
-        </div>
+        </div> */}
         <RouterView />
       </>
     )

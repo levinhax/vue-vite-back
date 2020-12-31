@@ -13,11 +13,11 @@ const config: ServerConfig = {
     '/@/': pathResolve('./src'),
   },
   // 配置Dep优化行为
-  // optimizeDeps: {
-  // 这个命令专门为解决模块引用的坑而开发
-  // 例如我们要在 vite 中使用 lodash，只需要在 vite.config.js （vite 配置文件）中，配置 optimizeDeps 对象，在 include 数组中添加 lodash
-  //   include: ['lodash'],
-  // },
+  optimizeDeps: {
+    // 这个命令专门为解决模块引用的坑而开发
+    // 例如我们要在 vite 中使用 lodash，只需要在 vite.config.js （vite 配置文件）中，配置 optimizeDeps 对象，在 include 数组中添加 lodash
+    include: ['@ant-design/icons-vue'],
+  },
   // 服务端口
   // port: 3000,
   // 代理
@@ -36,6 +36,13 @@ const config: ServerConfig = {
         'preprocess-custom-color': 'green',
       },
     },
+    // 定制主题配置
+    // less: {
+    //   modifyVars: {
+    //     'primary-color': '#1DA57A',
+    //   },
+    //   javascriptEnabled: true,
+    // },
   },
 }
 

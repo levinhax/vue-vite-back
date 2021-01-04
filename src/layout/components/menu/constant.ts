@@ -15,9 +15,9 @@ export const menuData = [
     key: '1',
     name: 'home',
     path: '/home',
-    icon: '',
     meta: {
       title: '首页',
+      icon: 'icon-facebook',
       hidden: false,
     },
   },
@@ -25,9 +25,9 @@ export const menuData = [
     key: '2',
     name: 'dashboard',
     path: '/dashboard',
-    icon: 'dashboard', // https://demo.com/icon.png or <Icon type="dashboard" />
     meta: {
       title: 'dashboard',
+      icon: 'HomeOutlined', // https://demo.com/icon.png or <Icon type="dashboard" />
       hidden: false,
     },
     children: [
@@ -35,9 +35,9 @@ export const menuData = [
         key: '2-1',
         name: 'dashboard-workbench',
         path: '/dashboard/workbench',
-        icon: '',
         meta: {
           title: '工作台',
+          icon: 'dashboard',
           hidden: false,
         },
       },
@@ -45,9 +45,9 @@ export const menuData = [
         key: '2-2',
         name: 'dashboard-workbench-todo',
         path: '/dashboard/workbench-todo',
-        icon: '',
         meta: {
           title: '待做事项',
+          icon: 'dashboard',
           hidden: false,
         },
       },
@@ -55,9 +55,9 @@ export const menuData = [
         key: '2-3',
         name: 'dashboard-analysis',
         path: '/dashboard/analysis',
-        icon: '',
         meta: {
           title: '分析页',
+          icon: 'dashboard',
           hidden: false,
         },
       },
@@ -65,9 +65,9 @@ export const menuData = [
         key: '2-4',
         name: 'dashboard-monitor',
         path: '/dashboard/monitor',
-        icon: '',
         meta: {
           title: '监控页',
+          icon: 'dashboard',
           hidden: false,
         },
         children: [
@@ -75,9 +75,9 @@ export const menuData = [
             key: '2-4-1',
             name: 'dashboard-alarmMonitor',
             path: '',
-            icon: '',
             meta: {
               title: '告警监控',
+              icon: 'dashboard',
               hidden: false,
             },
           },
